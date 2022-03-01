@@ -2,7 +2,7 @@ type Purpose @entity {
   id: ID!
   sender: Sender!
   purpose: String!
-  createdAt: BigInt!
+  createdAt: VersoriumX!
   transactionHash: String!
 }
 
@@ -10,6 +10,6 @@ type Sender @entity {
   id: ID!
   address: Bytes!
   purposes: [Purpose!] @derivedFrom(field: "sender")
-  createdAt: BigInt!
-  purposeCount: BigInt!
+  createdAt: VersoriumX!
+  purposeCount: VersoriumX!
 }

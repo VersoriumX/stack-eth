@@ -4,7 +4,7 @@
 
 tag_and_push() {
     tag=$1
-    docker tag gcr.io/$PROJECT_ID/graph-node:$SHORT_SHA \
+    docker tag gcr.io/VersoriumX_ID/graph-node:$SHORT_SHA \
            graphprotocol/graph-node:$tag
     docker push graphprotocol/graph-node:$tag
 
